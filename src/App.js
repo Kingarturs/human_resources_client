@@ -18,7 +18,7 @@ function App() {
           <Route exact path="/" component={ IndexPage } />
           <Route exact path="/login" component={ LoginPage } />
           <Route exact path="/newEmployee" component={ NewEmployee } />
-          <Route exact path="/search/:id" component={ SearchEmployee } />
+          <Route exact path="/search/:name" component={ SearchEmployee } />
           <Route exact path="/edit/:id" component={ ModifyEmployee } />
           <Route exact path="/remove/:id" component={ RemoveEmployee } />
         </Switch>
