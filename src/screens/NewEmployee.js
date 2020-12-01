@@ -109,7 +109,7 @@ function NewEmployee() {
 						}}
 						className="w-16 h-16 absolute bottom-12 right-12 transform transition hover:scale-90 hover:shadow-lg focus:outline-none rounded-full bg-blue-600 shadow-xl text-white"
 					>
-						<i class="fas fa-plus"></i>
+						<i className="fas fa-plus"></i>
 					</button>
 				</div>
 			</div>

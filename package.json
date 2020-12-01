@@ -21,7 +21,6 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "homepage": "https://kingarturs.github.io/human_resources/",
   "eslintConfig": {
     "extends": [
       "react-app",
