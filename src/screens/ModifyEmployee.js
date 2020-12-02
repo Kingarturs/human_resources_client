@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-
+import Swal from 'sweetalert2';
+import withReactContent from 'sweetalert2-react-content';
 import { useParams, useHistory } from 'react-router-dom';
 import axios from 'axios';
 
@@ -13,7 +14,7 @@ function ModifyEmployee() {
 		email: "",
 		address: "",
 	});
-
+	const MySwal = withReactContent(Swal);
 	const history = useHistory();
 
 	useEffect(() => {
@@ -43,7 +44,14 @@ function ModifyEmployee() {
 			email === "" ||
 			address === ""
 		) {
-			alert("Incmplete fields");
+			MySwal.fire({
+				title: <p>Please complete all the fields</p>,
+				toast: true,
+				icon: "error",
+				position: 'top-end',
+				timer: 2500,
+				timerProgressBar: true
+			})
 			return false;
 		} else {
 			return true;
